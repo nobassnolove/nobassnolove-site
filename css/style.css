@@ -774,6 +774,90 @@ button { font-family: inherit; cursor: pointer; }
 }
 .photo-grid__item:hover img { transform: scale(1.04); }
 
+/* ---------- 14.5 LOJINHA / MERCH ---------- */
+.merch {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+}
+@media (min-width: 860px) {
+  .merch { grid-template-columns: 1.1fr 0.9fr; align-items: center; gap: var(--space-2xl); }
+}
+
+.merch__gallery-main {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--bg-alt);
+  aspect-ratio: 1;
+}
+.merch__gallery-main img { width: 100%; height: 100%; object-fit: cover; }
+
+.merch__gallery-thumbs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-sm);
+  margin-top: var(--space-sm);
+}
+.merch__gallery-thumbs img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  background: var(--bg-alt);
+}
+
+.merch__title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  line-height: 0.95;
+  margin: 0.2rem 0 var(--space-sm);
+}
+
+.merch__price {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  margin-bottom: var(--space-md);
+}
+.merch__price-value {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 2.6rem;
+  color: var(--accent);
+  line-height: 1;
+}
+.merch__price-note {
+  color: var(--text-faint);
+  font-size: 0.85rem;
+  font-family: var(--font-mono);
+}
+
+.merch__specs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0 0 var(--space-lg);
+  padding: var(--space-md);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--bg-alt);
+}
+.merch__specs li {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+}
+.merch__specs li strong { color: var(--text); }
+
+.merch__cta { width: 100%; }
+.merch__hint {
+  margin: var(--space-sm) 0 0;
+  color: var(--text-faint);
+  font-size: 0.82rem;
+  text-align: center;
+}
+
 /* ---------- 15. AGENDA / CTA ---------- */
 .shows-cta {
   text-align: center;
@@ -783,6 +867,53 @@ button { font-family: inherit; cursor: pointer; }
 .shows-cta p {
   color: var(--text-muted);
   margin: var(--space-sm) 0 var(--space-md);
+}
+
+.show-date-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin: var(--space-sm) 0;
+  padding: 1rem 1.75rem;
+  border: 1.5px solid var(--border-strong);
+  border-radius: var(--radius-md);
+  background: var(--bg-alt);
+  text-align: left;
+}
+.show-date-card__date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1;
+  padding-right: 1.25rem;
+  border-right: 1px solid var(--border-strong);
+  flex-shrink: 0;
+}
+.show-date-card__day {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 2.4rem;
+  color: var(--accent);
+}
+.show-date-card__month {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin-top: 0.15rem;
+}
+.show-date-card__info h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  line-height: 1;
+}
+.show-date-card__info p {
+  margin: 0.3rem 0 0;
+  color: var(--text-muted);
+  font-size: 0.92rem;
 }
 
 /* ---------- 16. DOWNLOADS ---------- */

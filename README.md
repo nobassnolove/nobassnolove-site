@@ -33,11 +33,22 @@ necessário mexer no código.
 | `depoimento01-sylvia.jpg`, `depoimento02-chuck.jpg` | Avatares dos depoimentos |
 | `show01.jpg` ... `show04.jpg` | Galeria de fotos promocionais |
 | `logo.png` | Logotipo oficial (branco, fundo transparente) — usado na navbar e no rodapé |
+| `merch01-camiseta-reativo.jpg` | Foto principal do produto na seção Loja |
+| `merch02-lifestyle01.jpg`, `merch03-lifestyle02.jpg` | Fotos secundárias (miniaturas) da seção Loja |
 
 **Nota de qualidade:** as imagens atuais foram extraídas do PDF do EPK
 (portanto em resolução moderada, suficiente para thumbnails, mas não para
 impressão). Substitua por arquivos em maior resolução quando possível,
 mantendo o mesmo nome de arquivo e, se possível, proporção semelhante.
+
+## Loja / vendas por WhatsApp
+
+A seção "Loja" (`#loja`) vende a camiseta oficial via WhatsApp — o botão
+"Comprar pelo WhatsApp" abre uma conversa já com uma mensagem pronta para o
+número **(19) 98121-0841**. Para trocar o número, edite o link `https://wa.me/...`
+no `index.html` (procure por `wa.me`) — o formato é `55` + DDD + número, sem
+espaços ou traços. Preço, tamanhos e material também estão direto no HTML,
+fáceis de editar caso mudem.
 
 ## Pendências (marcadas com `<!-- TODO -->` no `index.html`)
 
