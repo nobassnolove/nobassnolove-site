@@ -1,6 +1,6 @@
 /* ==========================================================================
    NO BASS NO LOVE — Electronic Press Kit
-   Design system: post-punk minimalista + premium editorial
+   Design system: electroclash/dance punk + premium editorial
    ========================================================================== */
 
 /* ---------- 1. TOKENS ---------- */
@@ -347,7 +347,7 @@ button { font-family: inherit; cursor: pointer; }
 .hero__tagline {
   font-size: clamp(1.05rem, 2vw, 1.4rem);
   color: var(--text-muted);
-  max-width: 34ch;
+  max-width: 44ch;
   margin: 0 0 var(--space-lg);
 }
 .hero__tagline em { color: var(--text); font-style: normal; font-weight: 700; }
